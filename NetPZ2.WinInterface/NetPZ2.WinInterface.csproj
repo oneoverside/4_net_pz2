@@ -10,10 +10,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Forms\Voc2\CrudForms\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <Compile Update="Forms\MainTable\ManageMainTableForm.cs">
         <SubType>Form</SubType>
       </Compile>
@@ -42,6 +38,21 @@
         <SubType>Form</SubType>
       </Compile>
       <Compile Update="Forms\Voc1\CrudForms\Voc1TableUpdateForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Forms\Voc2\CrudForms\Voc2TableCreateForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Forms\Voc2\CrudForms\Voc2TableDeleteForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Forms\Voc2\CrudForms\Voc2TableReadForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Forms\Voc2\CrudForms\Voc2TableUpdateForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Forms\Voc2\ManageVoc2TableForm.cs">
         <SubType>Form</SubType>
       </Compile>
     </ItemGroup>

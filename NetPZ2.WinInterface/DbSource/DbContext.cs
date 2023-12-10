@@ -7,6 +7,7 @@ public class MyDbContext : DbContext
 {
     public DbSet<MainTable> MainTable;
     public DbSet<Voc1Table> Voc1;
+    public DbSet<Voc2Table> Voc2;
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -52,9 +53,9 @@ public class MyDbContext : DbContext
         this.SaveChanges();
     }
     
-    public List<MainTable> ReadAllFromVoc1Table()
+    public List<Voc1Table> ReadAllFromVoc1Table()
     {
-        return this.MainTable.ToList();
+        return this.Voc1.ToList();
     }
     
     public void Update(Voc1Table voc1)
@@ -67,8 +68,34 @@ public class MyDbContext : DbContext
     
     public void DeleteVoc1(int id)
     {
-        var oldElement = this.MainTable.First(x => x.Id == id);
-        this.MainTable.Remove(oldElement);
+        var oldElement = this.Voc1.First(x => x.Id == id);
+        this.Voc1.Remove(oldElement);
+        this.SaveChanges();
+    }
+    
+    public void Add(Voc2Table voc)
+    {
+        this.Voc2.Add(voc);
+        this.SaveChanges();
+    }
+    
+    public List<Voc2Table> ReadAllFromVoc2Table()
+    {
+        return this.Voc2.ToList();
+    }
+    
+    public void Update(Voc2Table voc)
+    {
+        var oldElement = this.Voc2.First(x => x.Id == voc.Id);
+        oldElement.CustomField = voc.CustomField;
+        this.Voc2.Update(oldElement);
+        this.SaveChanges();
+    }
+    
+    public void DeleteVoc2(int id)
+    {
+        var oldElement = this.Voc2.First(x => x.Id == id);
+        this.Voc2.Remove(oldElement);
         this.SaveChanges();
     }
 }
@@ -82,6 +109,12 @@ public class MainTable
 }
 
 public class Voc1Table
+{
+    public int Id { get; set; }
+    public string CustomField { get; set; } = "";
+}
+
+public class Voc2Table
 {
     public int Id { get; set; }
     public string CustomField { get; set; } = "";
