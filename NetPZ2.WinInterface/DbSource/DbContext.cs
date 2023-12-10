@@ -5,9 +5,9 @@ namespace Uni_NET_PZ2.DbSource;
 
 public class MyDbContext : DbContext
 {
-    public DbSet<MainTable> MainTable;
-    public DbSet<Voc1Table> Voc1;
-    public DbSet<Voc2Table> Voc2;
+    public DbSet<MainTable> MainTable { get; set; }
+    public DbSet<Voc1Table> Voc1Table { get; set; }
+    public DbSet<Voc2Table> Voc2Table { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -49,53 +49,53 @@ public class MyDbContext : DbContext
 
     public void Add(Voc1Table voc1)
     {
-        this.Voc1.Add(voc1);
+        this.Voc1Table.Add(voc1);
         this.SaveChanges();
     }
     
     public List<Voc1Table> ReadAllFromVoc1Table()
     {
-        return this.Voc1.ToList();
+        return this.Voc1Table.ToList();
     }
     
     public void Update(Voc1Table voc1)
     {
-        var oldElement = this.Voc1.First(x => x.Id == voc1.Id);
+        var oldElement = this.Voc1Table.First(x => x.Id == voc1.Id);
         oldElement.CustomField = voc1.CustomField;
-        this.Voc1.Update(oldElement);
+        this.Voc1Table.Update(oldElement);
         this.SaveChanges();
     }
     
     public void DeleteVoc1(int id)
     {
-        var oldElement = this.Voc1.First(x => x.Id == id);
-        this.Voc1.Remove(oldElement);
+        var oldElement = this.Voc1Table.First(x => x.Id == id);
+        this.Voc1Table.Remove(oldElement);
         this.SaveChanges();
     }
     
     public void Add(Voc2Table voc)
     {
-        this.Voc2.Add(voc);
+        this.Voc2Table.Add(voc);
         this.SaveChanges();
     }
     
     public List<Voc2Table> ReadAllFromVoc2Table()
     {
-        return this.Voc2.ToList();
+        return this.Voc2Table.ToList();
     }
     
     public void Update(Voc2Table voc)
     {
-        var oldElement = this.Voc2.First(x => x.Id == voc.Id);
+        var oldElement = this.Voc2Table.First(x => x.Id == voc.Id);
         oldElement.CustomField = voc.CustomField;
-        this.Voc2.Update(oldElement);
+        this.Voc2Table.Update(oldElement);
         this.SaveChanges();
     }
     
     public void DeleteVoc2(int id)
     {
-        var oldElement = this.Voc2.First(x => x.Id == id);
-        this.Voc2.Remove(oldElement);
+        var oldElement = this.Voc2Table.First(x => x.Id == id);
+        this.Voc2Table.Remove(oldElement);
         this.SaveChanges();
     }
 }

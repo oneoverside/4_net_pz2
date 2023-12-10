@@ -25,6 +25,7 @@ public partial class Voc1TableDeleteForm : Form
         button.Text = "Delete";
         button.Click += this.Delete;
         
+        this.Controls.Add(label);
         this.Controls.Add(this._id);
         this.Controls.Add(button);
     }
