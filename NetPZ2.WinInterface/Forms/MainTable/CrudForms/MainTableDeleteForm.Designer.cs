@@ -2,7 +2,7 @@ using System.ComponentModel;
 
 namespace Uni_NET_PZ2.Forms.MainTable.CrudForms;
 
-partial class MainTableCreate
+partial class MainTableDeleteForm
 {
     /// <summary>
     /// Required designer variable.
@@ -34,7 +34,7 @@ partial class MainTableCreate
         this.components = new System.ComponentModel.Container();
         this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         this.ClientSize = new System.Drawing.Size(800, 450);
-        this.Text = "MainTableCreate";
+        this.Text = "MainTableDeleteForm";
     }
 
     #endregion
