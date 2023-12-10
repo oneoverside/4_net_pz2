@@ -19,6 +19,9 @@ public partial class MainTableReadForm : Form
 
     private void GetMainTableElements(object? sender, EventArgs e)
     {
-        this._dataGridView.DataSource = new MyDbContext().ReadAllFromMainTable();
+        var context = new MyDbContext();
+        context.InitializeDatabase();
+
+        this._dataGridView.DataSource = context.ReadAllFromMainTable();
     }
 }

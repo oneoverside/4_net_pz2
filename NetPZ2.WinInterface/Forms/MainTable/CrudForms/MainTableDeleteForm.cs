@@ -19,17 +19,20 @@ public partial class MainTableDeleteForm : Form
         this._id.Text = "Id";
         this._id.Size = new Size(100, 50); 
         
-        var createButton = new Button();
-        createButton.Location = new Point(50, 350); 
-        createButton.Size = new Size(100, 50); 
-        createButton.Text = "Delete";
-        createButton.Click += this.Delete;
+        var button = new Button();
+        button.Location = new Point(50, 350); 
+        button.Size = new Size(100, 50); 
+        button.Text = "Delete";
+        button.Click += this.Delete;
+        
+        this.Controls.Add(this._id);
+        this.Controls.Add(button);
     }
     
     private void Delete(object? sender, EventArgs e)
     {
         var db = new MyDbContext();
-        db.Delete(Convert.ToInt32(this._id.Text));
+        db.DeleteMain(Convert.ToInt32(this._id.Text));
         this.Close();
     }
 }

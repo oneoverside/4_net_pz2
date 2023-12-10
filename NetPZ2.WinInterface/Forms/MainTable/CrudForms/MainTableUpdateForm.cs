@@ -37,7 +37,7 @@ public partial class MainTableUpdateForm : Form
         var createButton = new Button();
         createButton.Location = new Point(50, 350); 
         createButton.Size = new Size(100, 50); 
-        createButton.Text = "Create";
+        createButton.Text = "Update";
         createButton.Click += this.Update;
         
         this.Controls.Add(label);

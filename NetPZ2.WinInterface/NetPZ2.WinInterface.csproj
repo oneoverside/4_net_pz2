@@ -10,7 +10,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Forms\Voc1\CrudForms\" />
       <Folder Include="Forms\Voc2\CrudForms\" />
     </ItemGroup>
 
@@ -30,10 +29,26 @@
       <Compile Update="Forms\MainTable\CrudForms\MainTableReadForm.cs">
         <SubType>Form</SubType>
       </Compile>
+      <Compile Update="Forms\Voc1\ManageVoc1TableForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Forms\Voc1\CrudForms\Voc1TableCreateForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Forms\Voc1\CrudForms\Voc1TableDeleteForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Forms\Voc1\CrudForms\Voc1TableReadForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Forms\Voc1\CrudForms\Voc1TableUpdateForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
     </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="8.0.0" />
+      <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="2.1.7" />
     </ItemGroup>
 
 </Project>

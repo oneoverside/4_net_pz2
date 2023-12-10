@@ -1,4 +1,5 @@
 using Uni_NET_PZ2.Forms.MainTable;
+using Uni_NET_PZ2.Forms.Voc1;
 
 namespace Uni_NET_PZ2;
 
@@ -18,7 +19,7 @@ public partial class MainForm : Form
         voc1ManagerButton.Location = new Point(200, 150); // Позиция на форме
         voc1ManagerButton.Size = new Size(100, 50); // Размер кнопки
         voc1ManagerButton.Text = "Voc1 CRUD";
-        voc1ManagerButton.Click += this.OpenForm<ManageMainTableForm>; // Подписка на событие нажатия
+        voc1ManagerButton.Click += this.OpenForm<ManageVoc1TableForm>; // Подписка на событие нажатия
         
         var voc2ManagerButton = new Button();
         voc2ManagerButton.Location = new Point(350, 150); // Позиция на форме

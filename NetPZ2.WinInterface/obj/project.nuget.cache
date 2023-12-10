@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lIk3SOEOLfNotEBgrcjb56WzVxXkOipPuoavyXAM5JduoFSpqvxOFjgfsJd/IS8squ7up23x6BmEeeUTQT224g==",
+  "dgSpecHash": "Kv+J6Qs1LX+BZixnTsnu74g7Y+BwDTa9stAj8Pargmu994s8KivJf59uVzS8gi7z+jLzfC8PZLmzZrtl4Zhvbw==",
   "success": true,
   "projectFilePath": "C:\\Users\\oneov\\RiderProjects\\UNI\\Uni_NET_PZ2\\NetPZ2.WinInterface\\NetPZ2.WinInterface.csproj",
   "expectedPackageFiles": [
@@ -20,7 +20,10 @@
     "C:\\Users\\oneov\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\oneov\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
     "C:\\Users\\oneov\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
-    "C:\\Users\\oneov\\.nuget\\packages\\sqlitepclraw.core\\2.1.6\\sqlitepclraw.core.2.1.6.nupkg.sha512",
+    "C:\\Users\\oneov\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.7\\sqlitepclraw.bundle_e_sqlite3.2.1.7.nupkg.sha512",
+    "C:\\Users\\oneov\\.nuget\\packages\\sqlitepclraw.core\\2.1.7\\sqlitepclraw.core.2.1.7.nupkg.sha512",
+    "C:\\Users\\oneov\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.7\\sqlitepclraw.lib.e_sqlite3.2.1.7.nupkg.sha512",
+    "C:\\Users\\oneov\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.7\\sqlitepclraw.provider.e_sqlite3.2.1.7.nupkg.sha512",
     "C:\\Users\\oneov\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\oneov\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
     "C:\\Users\\oneov\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
