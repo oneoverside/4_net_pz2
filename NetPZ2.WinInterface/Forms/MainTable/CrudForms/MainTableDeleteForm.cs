@@ -1,3 +1,5 @@
+using Uni_NET_PZ2.DbSource;
+
 namespace Uni_NET_PZ2.Forms.MainTable.CrudForms;
 
 public partial class MainTableDeleteForm : Form
@@ -26,7 +28,8 @@ public partial class MainTableDeleteForm : Form
     
     private void Delete(object? sender, EventArgs e)
     {
-        // TODO:
+        var db = new MyDbContext();
+        db.Delete(Convert.ToInt32(this._id.Text));
         this.Close();
     }
 }

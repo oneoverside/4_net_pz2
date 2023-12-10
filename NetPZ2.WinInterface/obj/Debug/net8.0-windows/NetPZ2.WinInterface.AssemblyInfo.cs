@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NetPZ2.WinInterface")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd870a50a93ec5c8c97fd47c5f91293b2914fc0b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("NetPZ2.WinInterface")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NetPZ2.WinInterface")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,3 +1,5 @@
+using Uni_NET_PZ2.DbSource;
+
 namespace Uni_NET_PZ2.Forms.MainTable.CrudForms;
 
 public partial class MainTableCreateForm : Form
@@ -42,7 +44,13 @@ public partial class MainTableCreateForm : Form
 
     private void Create(object? sender, EventArgs e)
     {
-        // TODO:
+        var db = new MyDbContext();
+        db.Add(new DbSource.MainTable
+        {
+            CustomField = this._customField.Text,
+            Voc1Id = Convert.ToInt32(this._voc1Field.Text),
+            Voc2Id = Convert.ToInt32(this._voc1Field.Text),
+        });
         this.Close();
     }
 }

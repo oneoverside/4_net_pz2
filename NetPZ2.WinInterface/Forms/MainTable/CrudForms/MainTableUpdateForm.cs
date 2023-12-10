@@ -1,3 +1,5 @@
+using Uni_NET_PZ2.DbSource;
+
 namespace Uni_NET_PZ2.Forms.MainTable.CrudForms;
 
 public partial class MainTableUpdateForm : Form
@@ -48,7 +50,14 @@ public partial class MainTableUpdateForm : Form
 
     private void Update(object? sender, EventArgs e)
     {
-        // TODO:
+        var db = new MyDbContext();
+        db.Update(new DbSource.MainTable
+        {
+            Id = Convert.ToInt32(this._id.Text),
+            CustomField = this._customField.Text,
+            Voc1Id = Convert.ToInt32(this._voc1Field.Text),
+            Voc2Id = Convert.ToInt32(this._voc1Field.Text),
+        });
         this.Close();
     }
 }
