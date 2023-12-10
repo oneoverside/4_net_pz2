@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWindowsForms>true</UseWindowsForms>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>Uni_NET_PZ2</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\NetPZ2.Application\NetPZ2.Application.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Forms\Voc1\CrudForms\" />
+      <Folder Include="Forms\Voc2\CrudForms\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Forms\MainTable\ManageMainTableForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Forms\MainTable\CrudForms\MainTableCreate.cs">
+        <SubType>Form</SubType>
+      </Compile>
+    </ItemGroup>
+
+</Project>

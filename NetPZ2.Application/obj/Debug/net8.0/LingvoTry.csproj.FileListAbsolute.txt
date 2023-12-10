@@ -1,0 +1,12 @@
+C:\Users\oneov\RiderProjects\LingvoTry\LingvoTry\bin\Debug\net8.0\LingvoTry.deps.json
+C:\Users\oneov\RiderProjects\LingvoTry\LingvoTry\bin\Debug\net8.0\LingvoTry.dll
+C:\Users\oneov\RiderProjects\LingvoTry\LingvoTry\bin\Debug\net8.0\LingvoTry.pdb
+C:\Users\oneov\RiderProjects\LingvoTry\LingvoTry\obj\Debug\net8.0\LingvoTry.csproj.AssemblyReference.cache
+C:\Users\oneov\RiderProjects\LingvoTry\LingvoTry\obj\Debug\net8.0\LingvoTry.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\oneov\RiderProjects\LingvoTry\LingvoTry\obj\Debug\net8.0\LingvoTry.AssemblyInfoInputs.cache
+C:\Users\oneov\RiderProjects\LingvoTry\LingvoTry\obj\Debug\net8.0\LingvoTry.AssemblyInfo.cs
+C:\Users\oneov\RiderProjects\LingvoTry\LingvoTry\obj\Debug\net8.0\LingvoTry.csproj.CoreCompileInputs.cache
+C:\Users\oneov\RiderProjects\LingvoTry\LingvoTry\obj\Debug\net8.0\LingvoTry.dll
+C:\Users\oneov\RiderProjects\LingvoTry\LingvoTry\obj\Debug\net8.0\refint\LingvoTry.dll
+C:\Users\oneov\RiderProjects\LingvoTry\LingvoTry\obj\Debug\net8.0\LingvoTry.pdb
+C:\Users\oneov\RiderProjects\LingvoTry\LingvoTry\obj\Debug\net8.0\ref\LingvoTry.dll
